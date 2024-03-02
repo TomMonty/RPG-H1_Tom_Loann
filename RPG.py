@@ -185,7 +185,7 @@ def save():
     save_list = [name, str(HP), str(ATK), str(healing_card), str(max_healing_card), str(gold), str(x), str(y),
                  str(key), str(stun_card), str(double_dmg_card), str(resistance_card)]
 
-    file = open("../RGP_Tom-Monty_Loann-Duval/load.txt", "w")
+    file = open("./load.txt", "w")
 
     for item in save_list:
         file.write(item + "\n")
@@ -715,7 +715,7 @@ while run:
             play = True
         elif choice == "2":
             try:
-                f = open("../RGP_Tom-Monty_Loann-Duval/load.txt", "r")
+                f = open("./load.txt", "r")
                 load_list = f.readlines()
                 if len(load_list) == 9:
                     name = load_list[0][:-1]
