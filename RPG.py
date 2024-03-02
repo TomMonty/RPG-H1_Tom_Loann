@@ -24,7 +24,7 @@ stun_active = False
 stun_turns_left = 0
 
 
-HP = 500
+HP = 50
 HPMAX = HP
 initial_HPMAX = HPMAX
 ATK = 5
@@ -33,7 +33,7 @@ max_healing_card = 0
 stun_card = 0
 double_dmg_card = 0
 resistance_card = 0
-gold = 900
+gold = 0
 x = 0
 y = 0
 
@@ -117,7 +117,7 @@ enemies = {
     "Owl NPC": {"hp": 5, "at": 1, "gold": 5},
     "Hyper Puffball": {"hp": 10, "at": 2, "gold": 8},
     "Wolf Pack": {"hp": 25, "at": 4, "gold": 18},
-    "Razor": {"hp": 250, "at": 25, "gold": 100}
+    "Razor": {"hp": 250, "at": 25, "gold": 1000}
 }
 
 sys.stdout = open(os.devnull, 'w')
